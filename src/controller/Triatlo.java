@@ -63,10 +63,10 @@ public class Triatlo extends Thread{
 			percorrido += corre;
 			if(percorrido >percTotal)
 				percorrido = 3000;
-			//System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m.");
+			System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m. na corrida");
 			
 		}
-		System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m.");
+		//System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m.");
 		vtPont [atleta-1][0] = atleta;
 		vtPont [atleta-1][1] = pontosCo * 10;
 		pontosCo -= 1;
@@ -106,11 +106,11 @@ public class Triatlo extends Thread{
 			}
 			
 			percorrido += corre;
-			//System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m.");
+			System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m. no ciclismo");
 			if(percorrido >percTotal)
 				percorrido = 5000;
 		}
-		System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m.");
+		//System.out.println("O atleta "+atleta+" percorreu  "+percorrido+" m.");
 		vtPont[atleta-1][1] += pontosCi *10;
 		pontosCi -= 1;
 		
